@@ -8,11 +8,11 @@ const roomSchema = new mongoose.Schema({
   amenities: [String],
   images: [String],
   availability: Boolean,
-  location: {
-    city: String,
-    state: String,
-    country: String
-  },
+  // location: {
+  //   city: String,
+  //   state: String,
+  //   country: String
+  // },
   createdAt: { type: Date, default: Date.now }
 });
 

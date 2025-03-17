@@ -40,15 +40,6 @@ const router = express.Router();
  *                   type: string
  *               availability:
  *                 type: boolean
- *               location:
- *                 type: object
- *                 properties:
- *                   city:
- *                     type: string
- *                   state:
- *                     type: string
- *                   country:
- *                     type: string
  *     responses:
  *       201:
  *         description: Room added successfully
