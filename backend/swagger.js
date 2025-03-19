@@ -16,7 +16,7 @@ const swaggerOptions = {
 
 const swaggerDocs = swaggerJsDoc(swaggerOptions);
 
-// ✅ Function to Accept `app` as Argument
+//  Function to Accept `app` as Argument
 const setupSwagger = (app) => {
   app.use("/api-docs", swaggerUi.serve, swaggerUi.setup(swaggerDocs,{
     swaggerOptions: {

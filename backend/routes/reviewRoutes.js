@@ -41,16 +41,16 @@ router.post("/", async (req, res) => {
   try {
     const { userId, roomId, rating, comment } = req.body;
 
-    // ✅ Validate userId & roomId
+    //  Validate userId & roomId
     if (!mongoose.Types.ObjectId.isValid(userId) || !mongoose.Types.ObjectId.isValid(roomId)) {
       return res.status(400).json({ error: "Invalid userId or roomId format" });
     }
 
-    // ✅ Check if Room Exists
+    //  Check if Room Exists
     const room = await Room.findById(roomId);
     if (!room) return res.status(404).json({ error: "Room not found" });
 
-    // ✅ Save Review
+    //  Save Review
     const review = new Review({ userId, roomId, rating, comment });
     await review.save();
 

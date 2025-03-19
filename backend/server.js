@@ -4,7 +4,7 @@ const cors = require("cors");
 const connectDB = require("./config/db");
 const setupSwagger = require("./swagger"); // Import Swagger setup
 
-const authRoutes = require("./routes/authenticationroutes");
+const authRoutes = require("./routes/authenticationRoutes");
 const roomRoutes = require("./routes/roomRoutes");
 const bookingRoutes = require("./routes/bookingRoutes");
 const paymentRoutes = require("./routes/paymentRoutes");
